@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ground</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- assests management -->
+    <a-assets>
+      <img id="ground" src="./assets/ground.jpg" />
+      <img id="ground-nrm" src="./assets/ground-nrm.jpg" />
+    </a-assets>
+
+    <!--ground-->
+    <a-plane material="color: #999999; src: #ground; repeat: 5 5; normal-map: #ground-nrm; normal-texture-repeat: 5 5"  rotation="-90 0 0" scale="10 10 0">
+    </a-plane>
+
+  </a-scene>
+</body>
+
+</html>
